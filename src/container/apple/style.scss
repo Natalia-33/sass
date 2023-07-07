@@ -1,0 +1,73 @@
+@use '../../lib/service.scss' as s;
+
+
+.header {
+	@extend .section;
+	background-color: s.color('backgroundDark');
+}
+
+.header_content {
+	@extend .section_content;
+	display: flex;
+	padding: s.space(4) 0;
+	justify-content: space-between;
+	
+}
+
+.header_block {
+	display: flex;
+	gap: s.space(8);
+	align-items: center;
+}
+
+.header_icon {
+	@include s.click;
+}
+
+.header_link {
+	
+	color: s.color('whiteLight');
+	@include s.click;
+}
+.header_link {
+	font-size: s.size('small');
+}
+.product {
+	@extend .section;
+	padding-top: s.space(20);
+	padding-bottom: s.space(20);
+}
+.product_content {
+	display:grid;
+	gap: s.space(5);
+	text-align: center;
+	align-content: center;
+
+}
+.product_title {
+	font-size: 56px;
+	font-weight: 600;
+	// color: s.color('fontDark');
+}
+.product_description {
+	font-size: 28px;
+
+}
+.product_action {
+	display: flex;
+	align-items: center;
+	gap: s.space(5);
+	justify-content: center;
+
+	@include s.click;
+} 
+.product_link {
+	@include s.linkAction;
+}
+.product-big {
+	max-height: 700px;
+	height: 100vh;
+}
+.product--iphone-pro {
+	background-image: url('/img/iphone_pro.png');
+}
