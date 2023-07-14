@@ -1,10 +1,9 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @use './var.scss';
- *   | ^^^^^^^^^^^^^^^^^
- *   '
- *   src\lib\service.scss 5:1            @use
- *   src\container\apple\style.scss 1:1  root stylesheet */
+/* Error: Expected ".
+ *     ,
+ * 134 |     "iphone-pro" "/img/iphone_pro.png' #000,
+ *     |                                             ^
+ *     '
+ *   src\container\apple\style.scss 134:42  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @use './var.scss';\d\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\lib\\service.scss 5:1            @use\a   src\\container\\apple\\style.scss 1:1  root stylesheet";
+  content: "Error: Expected \".\a     \2577 \a 134 \2502      \"iphone-pro\" \"/img/iphone_pro.png' #000,\d\a     \2502                                              ^\a     \2575 \a   src\\container\\apple\\style.scss 134:42  root stylesheet";
 }
