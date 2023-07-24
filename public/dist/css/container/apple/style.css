@@ -1,9 +1,9 @@
-/* Error: Expected ".
+/* Error: expected "{".
  *     ,
- * 134 |     "iphone-pro" "/img/iphone_pro.png' #000,
- *     |                                             ^
+ * 136 |     "conference" "/img/conference.png" #fafafa,
+ *     |                                                ^
  *     '
- *   src\container\apple\style.scss 134:42  root stylesheet */
+ *   src\container\apple\style.scss 136:45  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected \".\a     \2577 \a 134 \2502      \"iphone-pro\" \"/img/iphone_pro.png' #000,\d\a     \2502                                              ^\a     \2575 \a   src\\container\\apple\\style.scss 134:42  root stylesheet";
+  content: 'Error: expected "{".\a     \2577 \a 136 \2502      "conference" "/img/conference.png" #fafafa,\d\a     \2502                                                 ^\a     \2575 \a   src\\container\\apple\\style.scss 136:45  root stylesheet';
 }

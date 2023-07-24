@@ -26,7 +26,6 @@
 }
 
 .header_link {
-	
 	color: service.color('whiteLight');
 	@include service.hoverActive;
 	font-size: service.fontSize("small");
@@ -131,7 +130,7 @@
 }
 
 .productImage {
-	"iphone-pro" "/img/iphone_pro.png' #000,
+	"iphone-pro" "/img/iphone_pro.png" #000,
 	"iphone" "/img/iphone.png" #fafafa,
 	"trade-in" "/img/trade-in.png" #fafafa,
 	"conference" "/img/conference.png" #fafafa,
