@@ -1,18 +1,48 @@
-/* Error: There is no module with the namespace "service".
- *    ,
- * 64 |     @media all and (width < service.screen('laptop')) {
- *    |                             ^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   src\lib\service.scss 64:26         @use
- *   src\layout\default\style.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: There is no module with the namespace \"service\".\a    \2577 \a 64 \2502      @media all and (width < service.screen('laptop')) {\d\a    \2502                              ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\lib\\service.scss 64:26         @use\a   src\\layout\\default\\style.scss 1:1  root stylesheet";
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
 }
+
+.section__content {
+  max-width: 1200px;
+  width: 100%;
+}
+@media all and (width < 1440px) {
+  .section__content {
+    max-width: 1100px;
+  }
+}
+@media all and (width < 1260px) {
+  .section__content {
+    max-width: 900px;
+  }
+}
+@media all and (width < 1000px) {
+  .section__content {
+    max-width: 700px;
+  }
+}
+@media all and (width < 620px) {
+  .section__content {
+    max-width: 500px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media all and (width < 1260px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #F5F5F7;
+}
+
+/*# sourceMappingURL=style.css.map */
