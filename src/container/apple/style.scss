@@ -10,7 +10,6 @@
 
 .header__content {
 	@extend .section__content;
-	
 	display: flex;
 	padding: service.space(4) 0;
 	justify-content: space-between;
@@ -87,11 +86,13 @@
 	height: 100vh;
 
 	background-size: cover;
+
+	@media all and (width < service.screen('tablet')) {
+		background-size: 150%;
+
+		max-height: 500px;
+	}
 	
-@media all and (width < service.screen('tablet')) {
-	background-size: 150%;
-	max-height: 500px;
-}
 }
 
 .product--small {

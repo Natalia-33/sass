@@ -1,8 +1,8 @@
-@use '../../lib/service.scss' as service;
+@use "../../lib/service.scss" as service;
 
 .page {
 	font-family: 'Roboto', sans-serif;
-	font-size: service.size();
+	font-size: service.fontSize();
 	background-color: service.color('background');
 }
 
